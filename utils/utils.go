@@ -13,3 +13,13 @@ func HomeDir() string {
 
 	return u.HomeDir
 }
+
+func Contains(strs []string, s string) bool {
+	for _, v := range strs {
+		if v == s {
+			return true
+		}
+	}
+
+	return false
+}

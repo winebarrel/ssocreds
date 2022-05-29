@@ -17,8 +17,16 @@ brew install winebarrel/ssocreds/ssocreds
 ```
 $ export AWS_PROFILE=my-profile
 $ aws sso login
+
 $ ssocreds
 export AWS_ACCESS_KEY_ID='ASIA*************'
 export AWS_SECRET_ACCESS_KEY='**********************************'
 export AWS_SESSION_TOKEN='****************************************'
+
+$ ssocreds json
+{
+  "accessKeyId": "ASIA*************",
+  "secretAccessKey": "**********************************',
+  "sessionToken": "****************************************"
+}
 ```
