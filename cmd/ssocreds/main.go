@@ -16,7 +16,7 @@ func init() {
 	log.SetFlags(0)
 }
 
-var allowFormats = []string{
+var allowedFormats = []string{
 	"env",
 	"json",
 }
@@ -33,8 +33,8 @@ func main() {
 	} else if len(os.Args) == 2 {
 		format = os.Args[1]
 
-		if !utils.Contains(allowFormats, format) {
-			log.Fatalf("invalid format: %s", format)
+		if !utils.Contains(allowedFormats, format) {
+			log.Fatalf("invalid format: %s (allowed formats: %v)", format, allowedFormats)
 		}
 	}
 
@@ -80,7 +80,7 @@ func main() {
 	case "json":
 		printJson(accessKeyId, secretAccessKey, sessionToken)
 	default:
-		log.Panicf("invalid format: %s", format)
+		log.Panicf("invalid format: %s,", format)
 	}
 
 }
