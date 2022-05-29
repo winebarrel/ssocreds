@@ -4,8 +4,6 @@ A tool to get temporary credentials from AWS SSO.
 
 cf. https://aws.amazon.com/premiumsupport/knowledge-center/sso-temporary-credentials/
 
-**NOTE: This tool does not depend on external tools.**
-
 [![build](https://github.com/winebarrel/ssocreds/actions/workflows/build.yml/badge.svg)](https://github.com/winebarrel/ssocreds/actions/workflows/build.yml)
 
 ## Installation
