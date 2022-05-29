@@ -1,0 +1,25 @@
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - main: ./cmd/ssocreds
+    binary: ssocreds
+    ldflags:
+      - -X main.version={{.Version}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+checksum:
+  name_template: "checksums.txt"
+brews:
+  - tap:
+      owner: winebarrel
+      name: homebrew-ssocreds
+    homepage: https://github.com/winebarrel/ssocreds
+    description: A tool to get temporary credentials from AWS SSO.
+    license: MIT
+    install: |
+      bin.install 'ssocreds'
