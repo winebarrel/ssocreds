@@ -29,4 +29,7 @@ $ ssocreds json
   "secretAccessKey": "**********************************',
   "sessionToken": "****************************************"
 }
+
+$ eval $(ssocreds)
+$ ... # Run any command that do not support AWS SSO
 ```
