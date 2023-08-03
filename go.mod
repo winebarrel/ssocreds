@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/aws/aws-sdk-go-v2 v1.20.0
 	github.com/aws/aws-sdk-go-v2/config v1.15.9
-	github.com/aws/aws-sdk-go-v2/service/sso v1.11.7
+	github.com/aws/aws-sdk-go-v2/service/sso v1.13.1
 	github.com/aws/aws-sdk-go-v2/service/sts v1.21.1
 	github.com/bigkevmcd/go-configparser v0.0.0-20210106142102-909504547ead
 )
