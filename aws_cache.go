@@ -3,7 +3,7 @@ package ssocreds
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"path/filepath"
 	"time"
 
@@ -25,7 +25,7 @@ func awsCache() ([]map[string]string, error) {
 	caches := []map[string]string{}
 
 	for _, f := range files {
-		raw, err := ioutil.ReadFile(f)
+		raw, err := os.ReadFile(f)
 
 		if err != nil {
 			return nil, err
