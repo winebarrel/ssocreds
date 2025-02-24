@@ -7,7 +7,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.29.6
 	github.com/aws/aws-sdk-go-v2/service/sso v1.24.15
 	github.com/aws/aws-sdk-go-v2/service/sts v1.33.14
-	github.com/bigkevmcd/go-configparser v0.0.0-20210106142102-909504547ead
+	github.com/bigkevmcd/go-configparser v0.0.0-20240808124832-fc81059ea0bd
 )
 
 require (
